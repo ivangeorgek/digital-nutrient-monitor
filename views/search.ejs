@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search <%=recipeAppName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1>Search <%=recipeAppName%></h1>
+    <form action="/search-result" method="GET">
+      <p>Search for foods in our database</p>
+      <input id="search-box" type="text" name="keyword" value="Default">
+      <input type="submit" value="Search" >
+    </form>
+    <p><a href="./">Back to home</a></p>
+  </body>
+</html>

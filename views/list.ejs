@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome to <%=recipeAppName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h2>Here are the results</h2>
+    <table>
+      <tr>
+        <th>name</th>
+        <th>values-per</th>
+        <th>units</th>
+        <th>carbs</th>
+        <th>fat</th>
+        <th>protein</th>
+        <th>salt</th>
+        <th>sugar</th>
+        <th>sugar</th>
+      </tr>
+      <% availableFoods.forEach(function(food) { %>
+        <tr>
+          <td><%= food.food_name %></td>
+          <td><%= food.units %></td>
+          <td><%= food.values_per %></td>
+          <td><%= food.carbs %></td>
+          <td><%= food.fat %></td>
+          <td><%= food.protein %></td>
+          <td><%= food.salt %></td>
+          <td><%= food.sugar %></td>
+          <td><%= food.sugar %></td>
+        </tr>
+      <% }) %>
+    </table>
+    <p><a href="./">Back to home</a></p>
+    </body>
+</html>

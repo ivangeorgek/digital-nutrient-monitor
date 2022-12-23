@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Add book to <%=recipeAppName%>
+  </title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <h1>
+    <%=recipeAppName%>: Edit this Food item
+  </h1>
+  <form method="POST" action="/updated">
+    <p>Name: <input id="name" type="text" name="name" value="<%=availableFoods[0].food_name%>" /></p>
+    <p>Typical values per: <input id="values" type="text" name="values" value="<%=availableFoods[0].values_per%>" /></p>
+    <p>Units of Typical Values: <input id="units" type="text" name="units" value="<%=availableFoods[0].units%>" /></p>
+    <p>Carbs: <input id="carbs" type="text" name="carbs" value="<%=availableFoods[0].carbs%>" /></p>
+    <p>Fat: <input id="fat" type="text" name="fat" value="<%=availableFoods[0].fat%>" /></p>
+    <p>Protein: <input id="protein" type="text" name="protein" value="<%=availableFoods[0].protein%>" /></p>
+    <p>Salt: <input id="salt" type="text" name="salt" value="<%=availableFoods[0].salt%>" /></p>
+    <p>Sugar: <input id="sugar" type="text" name="sugar" value="<%=availableFoods[0].sugar%>" /></p>
+    <input type="submit" value="Update" />
+  </form>
+  <p><a href="./">Back to home</a></p>
+</body>
+
+</html>
